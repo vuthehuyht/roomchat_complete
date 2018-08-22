@@ -1,0 +1,4 @@
+﻿  Room.cpp
+e:\network programing\multi_server_client_chat\multi-threadserver\server\room.cpp(92): warning C4018: '<': signed/unsigned mismatch
+e:\network programing\multi_server_client_chat\multi-threadserver\server\room.cpp(108): warning C4018: '<': signed/unsigned mismatch
+  Server.vcxproj -> E:\Network Programing\multi_server_client_chat\Multi-threadServer\Debug\Server.exe
