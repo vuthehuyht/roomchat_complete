@@ -61,7 +61,7 @@ void Room::loadStatus() {
 	std::fstream f;
 	f.open("roomstatus.txt", std::ios::in);
 	if (f.fail())
-		std::cout << "Opening file fail" << std::endl;
+		std::cout << "Opening file fai!" << std::endl;
 	else {
 		std::string data;
 		std::string data_1;
@@ -72,6 +72,7 @@ void Room::loadStatus() {
 			if (i == 1) {
 				data_1 = data;
 				i++;
+				data.clear();
 				continue;
 			}
 			if (i == 2) {
@@ -79,10 +80,12 @@ void Room::loadStatus() {
 				i++;
 				if (i == 3) {
 					memberStatus.insert(std::make_pair(data_1, data_2));
+					data_1.clear();
+					data_2.clear();
 					i = 1;
 				}
+				data.clear();
 			}
-			
 		}
 	}
 	f.close();

@@ -27,7 +27,6 @@ Server::Server(int port) {
 		MessageBoxA(NULL, ErrorMsg.c_str(), "Error", MB_OK | MB_ICONERROR);
 		exit(1);
 	}
-	serverptr = this;
 	db.loadData();
 	room.loadStatus();
 }

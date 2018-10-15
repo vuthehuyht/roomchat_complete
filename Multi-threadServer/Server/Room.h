@@ -24,7 +24,6 @@ private:
 	std::map<std::string, std::string> memberStatus;
 	std::vector<std::string> kickOut;
 
-
 private:
 	bool checkMember(std::string username);
 	void switchAdmin();
